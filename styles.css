@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
 body {
@@ -33,7 +34,9 @@ main {
     min-width: 75%;
     min-height: 70%;
     background-color: #24221F;
-    padding: 3em 6em 3em 6em;
+    padding: 2em 5em 2em 5em;
+    border-radius: 4px;
+    justify-content: center;
 }
 
 #titleOne {
@@ -47,16 +50,215 @@ main {
 #titleLogo {
     width: 1.2em;
     margin-right: 0.5em;
-    padding-top: 0.2em;
+    padding-top: 0.5em;
 }
 
 #titleTwo {
-    margin-top: 0.65em;
+    margin: 0.5em 0;
+}
+
+#titleTwo p {
     color: #AFB6C2;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 0.9em;
+}
+
+form {
+    margin: 0.5em 0;
+}
+
+form > div {
+    display: flex;
+    flex-direction: column;
+    color: #AFB6C2;
+}
+
+#email {
+    display: flex;
+    height: 2.2em;
+    padding-left: 0.5em;
+    column-gap: 0.3em;
+    border: 1px solid #868686;
+    border-radius: 4px;
+    align-items: center;
+    margin-bottom: 1em;
+}
+
+#email img {
+    width: 1em;
+}
+
+#email input {
+    width: 100%;
+    height: 100%;
+    background: none;
+    border: none;
+    outline: none;
+    color: #A9AFB9;
+}
+
+#email:focus-within {
+    border: 1px solid #FFC632;
+}
+
+#password {
+    display: flex;
+    height: 2.2em;
+    padding-left: 0.5em;
+    border: 1px solid #868686;
+    border-radius: 4px;
+    justify-content: space-between;
+    margin-bottom: 1em;
+}
+
+#password > div {
+    display: flex;
+    column-gap: 0.3em;
+}
+
+#password > div:last-child {
+    margin-right: 0.5em;
+    cursor: pointer;
+}
+
+#password img {
+    width: 1em;
+}
+
+#password input {
+    width: 100%;
+    height: 100%;
+    background: none;
+    border: none;
+    outline: none;
+    color: #A9AFB9;
+}
+
+#password:focus-within {
+    border: 1px solid #FFC632;
+}
+
+#links {
+    display: flex;
+    justify-content: space-between;
+    color: #A9AFB9;
+    margin-bottom: 1em;
+}
+
+#links div {
+    display: flex;
+    align-items: center;
+    column-gap: 0.2em;
+}
+
+#links a {
+    text-decoration: none;
+    color: #FFC632;
+    font-weight: 600;
+}
+
+#links div span {
+    font-size: 0.9em;
+}
+
+#links a {
+    font-size: 0.9em;
+}
+
+#links a:hover {
+    text-decoration: underline;
+}
+
+#enter {
+    height: 2.5em;
+    margin-bottom: 1em;
+}
+
+#enter button {
+    width: 100%;
+    height: 100%;
+    background-color: #FFC632;
+    color: #473404;
+    border: none;
+    border-radius: 4px;
+    font-size: 1em;
+    font-weight: 600;
+}
+
+#enter button:hover {
+    background-color: rgba(71, 52, 4, 0.75);
+    color: #FFC632;
+    cursor: pointer;
+}
+
+#register {
+    display: flex;
+    justify-content: center;
+}
+
+#register a {
+    text-decoration: none;
+    color: #FFC632;
+    font-weight: 400;
+    font-size: 0.9em;
+}
+
+#register a b {
+    font-weight: 600;
+}
+
+#register a b:hover {
+    text-decoration: underline;
 }
 
 #background {
     flex: 1;
     background: url(./assets/side-image-2x.jpg) center;
     background-size: cover;
+}
+
+/* Media Queries */
+
+@media (max-width: 860px) {
+    #background {
+        display: none;
+    }
+    
+    main {
+        align-items: center;
+        justify-content: center;
+    }
+
+    #logo {
+       margin: 0;
+       width: 10em;
+    }
+}
+
+@media (max-width: 565px) {
+    #container {
+        min-width: none;
+        max-width: 60%;
+        min-height: none;
+        max-height: 100%;
+        padding: 0 1em;
+    }
+
+    #titleOne {
+        flex-direction: column;
+    }
+
+    #titleTwo {
+        text-align: center;
+    }
+
+    #enter {
+        padding: 0 1.5em;
+    }
+
+    #links {
+        flex-direction: column;
+        align-items: center;
+    }
 }

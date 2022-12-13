@@ -7,6 +7,13 @@
     <title>Document</title>
 
     <link rel="stylesheet" href="./styles.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap');
+    </style>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+    </style>
 </head>
 <body>
     <main>
@@ -30,11 +37,48 @@
             </div>
 
             <form>
+                <div>
+                    <label>E-mail</label>
+                    <div id="email">
+                        <img src="./assets/mail.svg" alt="">
+                        <input type="email" name="email" placeholder="Digite seu e-mail" required>
+                    </div>
+
+                    <label>Senha</label>
+                    <div id="password">
+                        <div>
+                            <img src="./assets/lock.svg" alt="">
+                            <input type="password" name="password" placeholder="Digite sua senha">
+                        </div>
+
+                        <div>
+                            <img src="./assets/eye.svg" alt="">
+                        </div>
+                    </div>
+
+                    <div id="links">
+                        <div>
+                            <input type="checkbox"id="remember">
+                            <span>Lembre-me</span>
+                        </div>
+
+                        <a href="#">Esqueci minha senha</a>
+                    </div>
+
+                    <div id="enter">
+                        <button>ENTRAR</button>
+                    </div>
+
+                    <div id="register">
+                        <a href="#">Não tem uma conta? <b>Registre-se</b></a>
+                    </div>
+                </div>
             </form>
         </div>
     </main>
 
     <div id="background">
+        
     </div>
 </body>
 </html>
