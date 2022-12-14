@@ -108,22 +108,28 @@ form > div {
     padding-left: 0.5em;
     border: 1px solid #868686;
     border-radius: 4px;
-    justify-content: space-between;
     margin-bottom: 1em;
 }
 
-#password > div {
+#password div:first-child {
     display: flex;
     column-gap: 0.3em;
+    width: 95%;
 }
 
-#password > div:last-child {
-    margin-right: 0.5em;
+#password div:last-child {
     cursor: pointer;
+    width: 5%;
+    display: flex;
+    margin-right: 0.5em;
 }
 
 #password img {
     width: 1em;
+}
+
+#passwordEye {
+    margin-top: 0.4em;
 }
 
 #password input {
@@ -149,7 +155,7 @@ form > div {
 #links div {
     display: flex;
     align-items: center;
-    column-gap: 0.2em;
+    column-gap: 0.3em;
 }
 
 #links a {
@@ -190,6 +196,7 @@ form > div {
     background-color: rgba(71, 52, 4, 0.75);
     color: #FFC632;
     cursor: pointer;
+    border: 1px solid #FFC632;
 }
 
 #register {
@@ -232,6 +239,7 @@ form > div {
 
     #logo {
        margin: 0;
+       margin-top: 2em;
        width: 10em;
     }
 }
@@ -247,6 +255,7 @@ form > div {
 
     #titleOne {
         flex-direction: column;
+        text-align: center;
     }
 
     #titleTwo {
@@ -260,5 +269,22 @@ form > div {
     #links {
         flex-direction: column;
         align-items: center;
+        text-align: center;
+    }
+}
+
+
+@media (max-width: 400px) {
+    #titleOne div:nth-child(2) {
+        font-size: 0.8em;
+    }
+
+    #register {
+        font-size: 0.9em;
+        text-align: center;
+    }
+
+    #password div:last-child {
+        margin-right: 1em;
     }
 }

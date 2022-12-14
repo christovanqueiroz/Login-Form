@@ -14,6 +14,8 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
     </style>
+
+    <script src="./scripts.js" defer></script>
 </head>
 <body>
     <main>
@@ -41,24 +43,34 @@
                     <label>E-mail</label>
                     <div id="email">
                         <img src="./assets/mail.svg" alt="">
-                        <input type="email" name="email" placeholder="Digite seu e-mail" required>
+                        <input id="emailInput" type="email" name="email" placeholder="Digite seu e-mail" required>
                     </div>
 
                     <label>Senha</label>
                     <div id="password">
                         <div>
                             <img src="./assets/lock.svg" alt="">
-                            <input type="password" name="password" placeholder="Digite sua senha">
+                            <input id="passwordInput" type="password" name="password" placeholder="Digite sua senha">
                         </div>
 
-                        <div>
-                            <img src="./assets/eye.svg" alt="">
+                        <div id="passwordEye">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_222_89)">
+                                <path d="M0.833374 9.99998C0.833374 9.99998 4.16671 3.33331 10 3.33331C15.8334 3.33331 19.1667 9.99998 19.1667 9.99998C19.1667 9.99998 15.8334 16.6666 10 16.6666C4.16671 16.6666 0.833374 9.99998 0.833374 9.99998Z" stroke="#AFB6C2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M10 12.5C11.3807 12.5 12.5 11.3807 12.5 10C12.5 8.61929 11.3807 7.5 10 7.5C8.61929 7.5 7.5 8.61929 7.5 10C7.5 11.3807 8.61929 12.5 10 12.5Z" stroke="#AFB6C2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_222_89">
+                                <rect width="20" height="20" fill="white"/>
+                                </clipPath>
+                                </defs>
+                            </svg>
                         </div>
                     </div>
 
                     <div id="links">
                         <div>
-                            <input type="checkbox"id="remember">
+                            <input type="checkbox"id="remember" style="scale:125%;">
                             <span>Lembre-me</span>
                         </div>
 
