@@ -23,11 +23,13 @@ const handleToggleEye = () => {
     if(eyeClosed) {
         document.querySelector('#passwordEye svg path:nth-child(1)').style.stroke = "#FFC632";
         document.querySelector('#passwordEye svg path:nth-child(2)').style.stroke = "#FFC632";
-        eyeClosed = true;
+        passwordInput.type = "text"
+        eyeClosed = false;
     } else {
         document.querySelector('#passwordEye svg path:nth-child(1)').style.stroke = "#AFB6C2";
         document.querySelector('#passwordEye svg path:nth-child(2)').style.stroke = "#AFB6C2";
-        eyeClosed = false;
+        passwordInput.type = "password"
+        eyeClosed = true;
     }
 }
 
